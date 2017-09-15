@@ -3,7 +3,7 @@ let router = express.Router();
 let qr = require("qr-image")
 /* 配置你使用的可访问地址. */
 
-let qrImg = qr.image("http://127.0.0.1:2666", {
+let qrImg = qr.image("http://172.18.15.243:2666", {
   type: 'png'
 })
 qrImg.pipe(require("fs").createWriteStream("public/img/qrImg.png"))
