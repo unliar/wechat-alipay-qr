@@ -7,12 +7,14 @@
 let app = require('../app');
 let debug = require('debug')('qr-sort:server');
 let http = require('http');
-
+let {
+  port
+} = require("../config/index.js")
 /**
  * Get port from environment and store in Express.
  */
 
-let port = normalizePort(process.env.PORT || '2666');
+
 app.set('port', port);
 
 /**
@@ -87,5 +89,5 @@ function onListening() {
     'pipe ' + addr :
     'port ' + addr.port;
   debug('Listening on ' + bind);
-  console.log(port)
+  console.log('your apps are running in the port:', port)
 }

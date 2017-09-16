@@ -1,13 +1,18 @@
 let express = require('express');
 let router = express.Router();
 let qr = require("qr-image")
-/* 配置你使用的可访问地址. */
+let h = {
+  hostName,
+  alipayUrl,
+  wechatPayQR
+} = require("../config/index")
 
-let qrImg = qr.image("http://172.18.15.243:2666", {
+
+let qrImg = qr.image(hostName, {
   type: 'png'
 })
 qrImg.pipe(require("fs").createWriteStream("public/img/qrImg.png"))
-/* 首页 */
+
 router.get('/', function (req, res) {
   const {
     'user-agent': agent
@@ -18,8 +23,9 @@ router.get('/', function (req, res) {
     res.redirect("/wechat")
   } else if (agent.indexOf("AlipayClient") !== -1) {
     //支付宝扫描直接跳转到转账
-    res.redirect('HTTPS://QR.ALIPAY.COM/FKX0736735EJNZE1PEYUA6') //你的支付宝收款识别出的地址
+    res.redirect(alipayUrl)
   } else {
+    //否则渲染入口页
     res.render("index")
   }
 
@@ -27,7 +33,7 @@ router.get('/', function (req, res) {
 
 router.get("/wechat", (req, res) => {
   res.render('wechat', {
-    url: 'img/qr.png' //你的微信转账图片地址
+    url: wechatPayQR //你的微信转账图片地址
   })
 })
 module.exports = router;

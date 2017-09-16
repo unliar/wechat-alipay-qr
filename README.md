@@ -7,8 +7,9 @@ use one qr picture to guide to your wechat or alipay account.
 * npm i
 * npm start
 > or
+* npm i
 * npm i nodemon
 * npm test
 
 ## dev
-* editor routes/index.js for your needs
+* editor cinfig/index.js for your needs
