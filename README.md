@@ -12,4 +12,4 @@ use one qr picture to guide to your wechat or alipay account.
 * npm test
 
 ## dev
-* editor cinfig/index.js for your needs
+* editor config/index.js for your needs
