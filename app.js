@@ -9,6 +9,7 @@ let index = require('./routes/index');
 
 let app = express();
 
+app.enable('trust proxy')
 // view engine setup
 nunjucks.configure('views', {
   autoescape: false,
@@ -20,7 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(logger('dev'));
+app.use(logger('combined'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: false
