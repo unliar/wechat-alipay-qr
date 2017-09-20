@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 let qr = require("qr-image")
-let h = {
+let {
   hostName,
   alipayUrl,
   wechatPayQR
