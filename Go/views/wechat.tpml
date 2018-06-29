@@ -1,0 +1,11 @@
+<html>
+
+<head>
+    <title>微信支付,打钱使人快乐</title>
+</head>
+<body>
+    <h1>打钱使人快乐!</h1>
+    <h2>长按支付</h2>
+    <img src="/statics/qr.png" alt="png" style="width: 100%;height: auto">
+</body>
+</html>
