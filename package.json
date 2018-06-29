@@ -1,19 +1,27 @@
 {
-  "name": "qr-sort",
-  "version": "0.0.0",
-  "private": true,
+  "name": "wechat-alipay-qr",
+  "version": "1.0.0",
+  "description": "use one qr picture to guide to your wechat or alipay account.",
+  "main": "Node.js",
   "scripts": {
-    "start": "node ./bin/www",
-    "test": "nodemon ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "express": "~4.15.2",
-    "morgan": "~1.8.1",
-    "nunjucks": "^3.0.1",
-    "qr-image": "^3.2.0",
-    "serve-favicon": "~2.4.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unliar/wechat-alipay-qr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unliar/wechat-alipay-qr/issues"
+  },
+  "homepage": "https://github.com/unliar/wechat-alipay-qr#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
