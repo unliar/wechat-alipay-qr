@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47cb5293-a79b-4944-b1c9-ff8d622552a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Go/app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Go/conf/env.go" beforeDir="false" afterPath="$PROJECT_DIR$/Go/conf/env.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Go/controllers/homeController.go" beforeDir="false" afterPath="$PROJECT_DIR$/Go/controllers/homeController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Go/statics/qrImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/Go/statics/qrImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Go/vendor/vendor.json" beforeDir="false" afterPath="$PROJECT_DIR$/Go/vendor/vendor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node.js/public/img/qr.png" beforeDir="false" afterPath="$PROJECT_DIR$/Node.js/public/img/qr.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -118,7 +112,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="183" y="84" width="1562" height="1080" extended-state="0" />
+    <frame x="237" y="69" width="1562" height="1080" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2005277" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -224,9 +218,6 @@
     <entry file="file://$PROJECT_DIR$/Go/statics/qrImg.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Go/statics/qr.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -287,6 +278,12 @@
           <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node.js/public/img/qr.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Go/statics/qr.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
