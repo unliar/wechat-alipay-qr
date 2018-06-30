@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	qr "github.com/skip2/go-qrcode"
-	"wechat-qr-Go/app/router"
+	"wechat-alipay-qr/Go/router"
 )
 
 func main() {
