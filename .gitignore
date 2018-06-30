@@ -1,3 +1,5 @@
 Node.js/node_modules/
 node_modules/
 Go/tmp/
+Go/vendor/!vendor.json
+.idea/

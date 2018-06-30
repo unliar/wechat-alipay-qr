@@ -14,8 +14,8 @@ type ENV struct {
 }
 
 var Dev =ENV{
-	"127.0.0.1",
-	"HTTPS://QR.ALIPAY.COM/FKX0736735EJNZE1PEYUA6",
+	"http://192.168.31.156:2666",
+	"HTTPS://QR.ALIPAY.COM/FKX09812XVMA33KQ3IDJ5B",
 	"statics/qr.png",
 	":2666",
 	"debug",
@@ -24,7 +24,7 @@ var Dev =ENV{
 
 var Pro =ENV{
 	"https://hipoor.com",
-	"HTTPS://QR.ALIPAY.COM/FKX0736735EJNZE1PEYUA6",
+	"HTTPS://QR.ALIPAY.COM/FKX09812XVMA33KQ3IDJ5B",
 	"statics/qr.png",
 	":2666",
 	"release",
@@ -33,7 +33,6 @@ var Pro =ENV{
 
 var CurrentEnv ENV
 
-var flagEnv string
 
 func init() {
 	env:=flag.String("env","Dev","当前的运行环境")

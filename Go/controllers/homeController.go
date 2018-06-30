@@ -14,17 +14,17 @@ func GetPath() string {
 func HomeRoute(c *gin.Context) {
 
 	h := c.GetHeader("user-agent")
-
 	isWechat := strings.Contains(h, "MicroMessenger")
 	isAlipay := strings.Contains(h, "AlipayClient")
+
 	// 如果是微信就跳转到/wechat渲染
 	if isWechat {
-		c.Redirect(301, "/wechat")
+		c.Redirect(http.StatusMovedPermanently, "/wechat")
 		return
 	}
 
 	if isAlipay {
-		c.Redirect(301, conf.CurrentEnv.Host)
+		c.Redirect(http.StatusMovedPermanently, conf.CurrentEnv.AlipayUrl)
 		return
 	}
 
