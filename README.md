@@ -64,6 +64,28 @@ go build app.go
 
 ```
 
+### docker
+
+```$xslt
+// 编译
+go build app.go
+
+// 生成镜像文件
+
+docker build -t goqr .
+
+// 启动container
+
+// 本机80端口绑定docker端口,后台运行,自动重启,正式环境
+
+docker run -p 80:2666 -d --restart=always higo -env Pro
+
+// 本机81端口绑定docker端口,后台运行,自动重启,开发环境
+
+docker run -p 81:2666 -d --restart=always higo -env Dev
+
+```
+
 
 
 
