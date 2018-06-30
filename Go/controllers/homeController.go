@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strings"
+	"wechat-alipay-qr/Go/conf"
 )
 
 func GetPath() string {
@@ -18,12 +19,12 @@ func HomeRoute(c *gin.Context) {
 	isAlipay := strings.Contains(h, "AlipayClient")
 	// 如果是微信就跳转到/wechat渲染
 	if isWechat {
-		c.Redirect(200, "/wechat")
+		c.Redirect(301, "/wechat")
 		return
 	}
 
 	if isAlipay {
-		c.Redirect(200, "http://hipoor.com")
+		c.Redirect(301, conf.CurrentEnv.Host)
 		return
 	}
 
