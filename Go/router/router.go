@@ -3,7 +3,7 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"wechat-qr-Go/app/controllers"
+	"wechat-alipay-qr/Go/controllers"
 )
 
 func RouterStates() *gin.Engine {
