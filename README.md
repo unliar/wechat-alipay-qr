@@ -54,7 +54,7 @@ go run app.go -env=Pro
 // 编译
 go build app.go
 
-// 记得复制views文,statics文件夹到执行文件同一目录
+// 记得复制views文件夹,statics文件夹到执行文件同一目录
 
 // 测试环境部署
 ./app -env=Dev
@@ -62,6 +62,15 @@ go build app.go
 // 正式环境部署
 ./app -env=Pro
 
+// supervisor 部署配置文件案例
+[program:hipoor]
+command=/root/node-web/wechat-alipay-qr/Go/app -env=Pro
+autostart = true
+startsecs = 5
+user = root
+directory=/root/node-web/wechat-alipay-qr/Go
+redirect_stderr = true
+stdout_logfile = /var/log/supervisor/hipoor.log
 ```
 
 ### docker
@@ -72,7 +81,7 @@ go build app.go
 
 // 生成镜像文件
 
-docker build -t goqr .
+docker build -t higo .
 
 // 启动container
 
