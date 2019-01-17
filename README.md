@@ -3,7 +3,29 @@ use one qr picture to guide to your wechat or alipay account.
 
 微信支付宝二维码聚合,识别不同的user-agent重定向到支付界面
 
-## Node.js版本
+## Vue前端版本[最佳版]
+> 后续会提供api接口开发多人版本
+
+### 流程
+
+1. 修改App.vue为你的支付信息
+
+2. 打包
+```
+// 进入Vue目录
+
+// 普通vue dist目录部署
+npm i 
+ 
+npm build
+
+// docker 构建打包
+
+docker build .
+```
+
+
+## <del>Node.js版本</del>
 
 ### 启动 
 
@@ -28,7 +50,7 @@ npm start:hot
 > 编辑 Node.js/config/index.js
 
 
-## Go语言版本
+##  <del>Go语言版本</del>
 >web框架 [gin](https://github.com/gin-gonic/gin)
 
 ### 启动
