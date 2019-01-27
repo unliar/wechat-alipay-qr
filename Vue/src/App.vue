@@ -14,6 +14,8 @@ export default {
     return {
       wechat: "wxp://f2f0Ow0E41-fNXXPOGN5Pu4J5E02jnhgTTwh",
       alipay: "https://qr.alipay.com/tsx01801kzs9lew0c8x0484",
+      qq:
+        "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=B9ADDB2B87E69E7BF2720F6E05A2AC13BD56123CEEF7FED9F62A23CA0F707147&u=370732889&n=%E8%BF%9C%E6%B5%85",
       showQRSource: "https://hipoor.com",
       type: ""
     };
@@ -23,8 +25,14 @@ export default {
       if (window && window.navigator && window.navigator.userAgent) {
         const isWechat = window.navigator.userAgent.includes("MicroMessenger");
         const isAlipay = window.navigator.userAgent.includes("AlipayClient");
+        const isQQ = window.navigator.userAgent.includes("MQQBrowser");
         if (isWechat) {
           this.showQRSource = this.wechat;
+          this.type = "wechat";
+          return;
+        }
+        if (isQQ) {
+          this.showQRSource = this.qq;
           this.type = "wechat";
           return;
         }
