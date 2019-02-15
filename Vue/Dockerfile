@@ -8,10 +8,10 @@ RUN npm i --registry https://registry.npm.taobao.org
 
 RUN npm run build
 
-FROM openresty/openresty:stretch
+FROM nginx:alpine
 
 LABEL maintainer="bless@unliar.com"
 
-COPY --from=build-vue /app/dist/ /usr/local/openresty/nginx/html
+COPY --from=build-vue /app/dist/ /usr/share/nginx/html
 
 CMD ["nginx","-g","daemon off;" ]
