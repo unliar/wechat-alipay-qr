@@ -25,7 +25,7 @@ export default {
       if (window && window.navigator && window.navigator.userAgent) {
         const isWechat = window.navigator.userAgent.includes("MicroMessenger");
         const isAlipay = window.navigator.userAgent.includes("AlipayClient");
-        const isQQ = window.navigator.userAgent.includes("MQQBrowser");
+        const isQQ = window.navigator.userAgent.includes("QQ");
         if (isWechat) {
           this.showQRSource = this.wechat;
           this.type = "wechat";
