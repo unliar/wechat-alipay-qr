@@ -8,7 +8,7 @@ RUN npm i --registry https://registry.npm.taobao.org
 
 RUN npm run build
 
-FROM nginx:alpine
+FROM ranadeeppolavarapu/nginx-http3
 
 LABEL maintainer="bless@unliar.com"
 
