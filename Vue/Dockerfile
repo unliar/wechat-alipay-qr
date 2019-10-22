@@ -12,6 +12,6 @@ FROM ranadeeppolavarapu/nginx-http3
 
 LABEL maintainer="bless@unliar.com"
 
-COPY --from=build-vue /app/dist/ /usr/share/nginx/html
+COPY --from=build-vue /app/dist/ /etc/nginx/html
 
 CMD ["nginx","-g","daemon off;" ]
