@@ -3,6 +3,8 @@ use one qr picture to guide to your wechat or alipay account.
 
 微信支付宝二维码聚合,识别不同的user-agent重定向到支付界面
 
+在线服务已启动，欢迎使用 https://happysooner.com/tools/pay-qrcode
+
 ## Vue前端版本[最佳版]
 > qq和微信都支持长按跳转支付界面，支付宝直接跳转。后续会提供api接口开发多人版本
 
